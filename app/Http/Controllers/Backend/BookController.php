@@ -142,8 +142,7 @@ class BookController extends Controller
      */
     public function update(Request $request, $id)
     {
-      return('ok');
-
+      
       $book = Book::find($id);
       $request->validate([
            'title' => 'required|max:50',
